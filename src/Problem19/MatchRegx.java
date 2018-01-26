@@ -5,7 +5,7 @@ public class MatchRegx {
 	public static void main(String[] args) {
 
 		String str = "aaa";
-		String pattern = "aa*a";
+		String pattern = "aa.a";
 		
 //		System.out.println("0:"+str.substring(0));
 //		System.out.println("1:"+str.substring(1));

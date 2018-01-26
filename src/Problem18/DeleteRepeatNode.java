@@ -6,13 +6,13 @@ import java.util.Map;
 public class DeleteRepeatNode {
 
 	public static void main(String[] args) {
-		Node nh = new Node(1);
+		Node nh = new Node(2);
 		Node n1 = new Node(2);
 		Node n2 = new Node(2);
 		Node n3 = new Node(5);
 		Node n4 = new Node(5);
 		Node n5 = new Node(5);
-		Node n6 = new Node(7);
+		Node n6 = new Node(9);
 		Node n7 = new Node(9);
 		nh.next = n1;
 		n1.next = n2;

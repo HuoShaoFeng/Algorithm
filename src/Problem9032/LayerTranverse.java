@@ -1,14 +1,30 @@
-package Problem32;
+package Problem9032;
 
 import java.util.LinkedList;
 import java.util.Queue;
 
-import javax.xml.soap.Node;
 
 public class LayerTranverse {
 
 	public static void main(String[] args) {
 
+		Node troot1 = new Node(8);
+		Node n1 = new Node(8);
+		Node n2 = new Node(7);
+		Node n3 = new Node(9);
+		Node n4 = new Node(3);
+		Node n5 = new Node(4);
+		Node n6 = new Node(7);
+		troot1.left = n1;troot1.right=n2;
+		n1.left=n3;n1.right=n4;
+		n2.left=null;n2.right=null;
+		n3.left=null;n3.right=null;
+		n4.left=n5;n4.right=n6;
+		n5.left=null;n5.right=null;
+		n6.left=null;n6.right=null;
+		
+		layerTranverseTree(troot1);
+		
 	}
 	/*
 	LinkedList 是一个继承于AbstractSequentialList的双向链表。它也可以被当作堆栈、队列或双端队列进行操作。

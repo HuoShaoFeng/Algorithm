@@ -10,7 +10,7 @@ public class NumberValid {
 	
 	
 	public static boolean isNumber(String str) {
-		if(str==null)
+		if(str==null || str.length()<1)
 			return false;
 		
 		boolean numberic = false;
@@ -36,8 +36,6 @@ public class NumberValid {
 		
 	}
 
-
-
 	public static boolean scanInteger(String str) {
 
 		int i = 0;
@@ -46,8 +44,6 @@ public class NumberValid {
 		
 		return scanUnsignedInteger(str);
 	}
-
-
 
 	public static boolean scanUnsignedInteger(String str) {
 		int i=0;

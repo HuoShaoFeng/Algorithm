@@ -45,7 +45,6 @@ public class MergeSortList {
 			head.next = MergeList(n1, n2.next);
 		}
 		
-		
 		return head;
 	}
 	

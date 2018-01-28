@@ -5,14 +5,13 @@ public class MatchRegx {
 	public static void main(String[] args) {
 
 		String str = "aaa";
-		String pattern = "aa.a";
-		
-//		System.out.println("0:"+str.substring(0));
-//		System.out.println("1:"+str.substring(1));
-//		System.out.println("2:"+str.substring(2).length()+",");
+		String pattern = "a*";
 		
 		boolean ret = match(str,pattern);
-		System.out.println(ret);
+		if(!ret)
+			System.out.println("≤ª∆•≈‰");
+		else
+			System.out.println("∆•≈‰");
 	}
 	
 	public static boolean match(String str, String pattern) {
@@ -24,10 +23,7 @@ public class MatchRegx {
 	
 	
 	public static boolean matchCore(String str, String pattern) {
-		
-		System.out.println(str+", "+pattern);
-		System.out.println(str.length()+", "+pattern.length());
-		
+				
 		if(str.length()==0 && pattern.length()==0)
 			return true;
 		

@@ -3,7 +3,7 @@ package Problem50;
 public class FIndUnrepeatChar {
 	
 	public static void main(String[] args) {
-		String str = "aebbaccdff";
+		String str = "paebbaccdff";
 		System.out.println(getUnrepeatChar(str));
 	}
 
@@ -18,10 +18,6 @@ public class FIndUnrepeatChar {
 			arr[charArray[i]]++;
 		}
 		
-		for (int c : arr) {
-			System.out.print(c+"  ");
-		}
-		System.out.println();
 		
 		for(int i=0;i<charArray.length;++i) {
 			if(arr[charArray[i]]==1)

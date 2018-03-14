@@ -5,14 +5,9 @@ public class InversePairs {
 	static int count=0;
 	
 	public static void main(String[] args) {
-		int[] arr = new int[] {9,7,5,6,14};
-		getPairs(arr);
+		int[] arr = new int[] {19,7,5,6,14};
+		merge_sort(arr, 0, arr.length-1);
 		System.out.println(count);
-
-	}
-
-	private static void getPairs(int[] arr) {
-		merge_sort(arr,0,arr.length-1);
 	}
 
 	private static void merge_sort(int[] arr, int begin, int end) {

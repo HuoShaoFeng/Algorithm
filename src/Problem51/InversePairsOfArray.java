@@ -9,7 +9,7 @@ public class InversePairsOfArray {
 
 	public static void main(String[] args) {
 		
-		int[] arr = {7,5,6,4};
+		int[] arr = {9,7,5,6,14};
 		
 		System.out.println("pairs = "+getInversePairs(arr));
 		
